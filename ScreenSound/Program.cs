@@ -1,4 +1,4 @@
-﻿List<string> listaBandas = new List<string>();
+﻿List<string> listaBandas = new List<string> {"U2", "Beatles", "Black Sabbath"};
 
 void ExibeCaracteres(string message = "Welcome to the Screen Sound app")
 {
@@ -69,9 +69,13 @@ void ListarBandas()
 {
     Console.Clear();
     Console.WriteLine("Bandas registradas: ");
-    for (int i = 0; i < listaBandas.Count; i += 1)
+    // for (int i = 0; i < listaBandas.Count; i += 1)
+    // {
+    //     Console.WriteLine($"Nome da Banda: {listaBandas[i]}");
+    // }
+    foreach (string registro in listaBandas)
     {
-        Console.WriteLine($"Nome da Banda: {listaBandas[i]}");
+        Console.WriteLine($"Nome da Banda: {registro}");
     }
     
     Thread.Sleep(2000);
